@@ -4,7 +4,10 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\menu_sound</sound>
+    <sound>sound\sword_sound</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="Player movement">
       <sprites name="Walk">
@@ -99,6 +102,19 @@
     <sprites name="Slime">
       <sprite>sprites\spr_green_slime</sprite>
     </sprites>
+    <sprite>sprites\kingslayer_title</sprite>
+    <sprite>sprites\spr_backMenu</sprite>
+    <sprite>sprites\spr_bar</sprite>
+    <sprite>sprites\spr_Continue</sprite>
+    <sprite>sprites\spr_Credits</sprite>
+    <sprite>sprites\spr_Logo</sprite>
+    <sprite>sprites\spr_cc1</sprite>
+    <sprite>sprites\spr_cc2</sprite>
+    <sprite>sprites\spr_cc3</sprite>
+    <sprite>sprites\spr_Quit</sprite>
+    <sprite>sprites\spr_slide</sprite>
+    <sprite>sprites\spr_ST</sprite>
+    <sprite>sprites\spr_Start</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -106,6 +122,7 @@
     <background>background\background3</background>
     <background>background\background5</background>
     <background>background\background6</background>
+    <background>background\bg_menu</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -113,6 +130,9 @@
     <script>scripts\scr_move_state.gml</script>
     <script>scripts\scr_find_depth.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_setting</font>
+  </fonts>
   <objects name="objects">
     <objects name="1st project">
       <object>objects\obj_wall</object>
@@ -128,12 +148,30 @@
     <object>objects\obj_character_creation</object>
     <object>objects\obj_green_pillar</object>
     <object>objects\obj_enemy_slime</object>
+    <object>objects\bg_music</object>
+    <object>objects\obj_bar</object>
+    <object>objects\obj_btnBack</object>
+    <object>objects\obj_btnCredit</object>
+    <object>objects\obj_btnQuit</object>
+    <object>objects\obj_btnSettings</object>
+    <object>objects\obj_btnStart</object>
+    <object>objects\obj_cc1</object>
+    <object>objects\obj_cc2</object>
+    <object>objects\obj_cc3</object>
+    <object>objects\obj_Continue</object>
+    <object>objects\obj_controller_sound</object>
+    <object>objects\obj_creditLogo</object>
+    <object>objects\obj_slider</object>
+    <object>objects\obj_ST</object>
+    <object>objects\title_menu</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room_menu</room>
     <room>rooms\rm_character_creation</room>
     <room>rooms\rm_base</room>
     <room>rooms\rm_1</room>
     <room>rooms\rm_one</room>
+    <room>rooms\room_credit</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
